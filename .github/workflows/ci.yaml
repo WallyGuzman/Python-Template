@@ -29,7 +29,6 @@ jobs:
       - name: Audit dependencies
         run: |
           uv audit
-          uv export --frozen --all-packages --format requirements.txt -q -o requirements.txt
           uv run pip-audit --require-hashes -r requirements.txt
 
       - name: Run type checks
@@ -41,5 +40,5 @@ jobs:
           uv run ruff check
 
       - name: Run tests with Pytest
-        run: |-
+        run: |
           uv run pytest
