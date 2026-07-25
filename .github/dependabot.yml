@@ -8,7 +8,7 @@ updates:
     cooldown:
       default-days: 7
     exclude-paths:
-      - "requirements.txt"
+      - "**/requirements.txt"
     groups:
       uv-dependencies:
         patterns:
