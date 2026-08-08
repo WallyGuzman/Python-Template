@@ -31,7 +31,6 @@ jobs:
       - name: Audit dependencies
         run: |
           uv audit
-          uv run pip-audit --require-hashes -r requirements.txt
 
       - name: Run type checks
         run: |
