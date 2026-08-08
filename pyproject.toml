@@ -9,10 +9,10 @@ dependencies = []
 [dependency-groups]
 dev = [
     "pip-audit>=2.10.0",
-    "pre-commit>=4.6.0",
+    "pre-commit>=4.6.1",
     "pytest>=9.0.3",
-    "ruff>=0.15.22",
-    "ty>=0.0.60",
+    "ruff>=0.16.1",
+    "ty>=0.0.65",
 ]
 
 [tool.uv]
